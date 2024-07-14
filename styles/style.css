@@ -1,0 +1,224 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("../assets/fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("../assets/fonts/static/HankenGrotesk-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("../assets/fonts/static/HankenGrotesk-ExtraBold.ttf")
+    format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+  --Light-slate-blue-background: hsl(252, 100%, 67%);
+  --Light-royal-blue-background: hsl(241, 81%, 54%);
+  --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+}
+main {
+  width: 100%;
+  height: 98vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 55%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0px 20px 50px 0px var(--Light-lavender);
+}
+section,
+.content {
+  min-width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px 30px;
+  border-radius: 20px;
+}
+section {
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    var(--Light-slate-blue-background) 0%,
+    var(--Light-royal-blue-background) 100%
+  );
+}
+.content {
+  padding: 30px 35px;
+}
+h1 {
+  color: var(--Light-lavender);
+  font-size: 27px;
+  font-weight: normal;
+}
+.circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    var(--Violet-blue-circle) 0%,
+    var(--Persian-blue-circle) 100%
+  );
+}
+.circle span {
+  color: var(--White);
+  font-size: 60px;
+  font-weight: 800;
+}
+section h2 {
+  color: var(--White);
+  font-size: 30px;
+  font-weight: 600;
+}
+section p {
+  color: var(--Light-lavender);
+  text-align: center;
+  padding: 0 20px;
+}
+.content h2 {
+  color: var(--Dark-gray-blue);
+}
+.results > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 15px;
+}
+.results > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.verbal,
+.visual {
+  background: var(--Pale-blue);
+}
+.results p span {
+  color: var(--Dark-gray-blue);
+}
+.results p {
+  color: var(--Light-lavender);
+  font-weight: bold;
+}
+.results h3 {
+  font-weight: 500;
+  font-size: 20px;
+}
+.results .reaction h3 {
+  color: var(--light-red);
+}
+.results .memory h3 {
+  color: var(--orangey-yellow);
+}
+.results .verbal h3 {
+  color: var(--green-teal);
+}
+.results .visual h3 {
+  color: var(--cobalt-blue);
+}
+button {
+  width: 100%;
+  height: 55px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  color: var(--White);
+  font-size: 18px;
+  cursor: pointer;
+  background: linear-gradient(
+    180deg,
+    var(--Dark-gray-blue) 0%,
+    var(--Dark-gray-blue) 100%
+  );
+}
+button:hover {
+  background: linear-gradient(
+    180deg,
+    var(--Light-slate-blue-background) 0%,
+    var(--Light-royal-blue-background) 100%
+  );
+}
+@media screen and (max-width: 875px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    box-shadow: none;
+  }
+  section {
+    border-radius: 0 0 50px 50px;
+    -webkit-border-radius: 0 0 50px 50px;
+    -moz-border-radius: 0 0 50px 50px;
+    -ms-border-radius: 0 0 50px 50px;
+    -o-border-radius: 0 0 50px 50px;
+    font-weight: 500;
+  }
+  .content {
+    width: 100%;
+  }
+  .content h2 {
+    margin-bottom: 25px;
+  }
+  button {
+    margin-top: 15px;
+  }
+}
