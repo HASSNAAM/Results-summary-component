@@ -55,8 +55,8 @@ main {
   align-items: center;
 }
 .container {
-  width: 55%;
-  height: 500px;
+  width: 52%;
+  height: 530px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,8 +70,12 @@ section,
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 20px 30px;
+  padding: 20px;
   border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 section {
   align-items: center;
@@ -86,7 +90,7 @@ section {
 }
 h1 {
   color: var(--Light-lavender);
-  font-size: 27px;
+  font-size: 25px;
   font-weight: normal;
 }
 .circle {
@@ -94,8 +98,8 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background: linear-gradient(
     180deg,
@@ -120,6 +124,7 @@ section p {
 }
 .content h2 {
   color: var(--Dark-gray-blue);
+  font-size: 25px;
 }
 .results > div {
   display: flex;
